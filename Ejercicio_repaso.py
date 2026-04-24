@@ -20,7 +20,7 @@ def buscaZapato(lst,zapa)-> bool :
 
 
 def ordSeleccion(lst):
-    n=len(list)
+    n=len(lst)
     for mano in range(n-1):
         posMayor = mano
         for ver in range(mano+1,n):

@@ -33,15 +33,14 @@ def ordSeleccion(lst):
             if lst[ver].nrc > lst[posMayor].nrc:
                 posMayor = ver
         lst[mano], lst[posMayor] = lst[posMayor], lst[mano]
+
 def ordSeleccionNRC(lst):
     n = len(lst)
     for mano in range(n - 1):
         posMenor = mano
         for ver in range(mano + 1, n):
-            # Comparamos el atributo .nrc de cada objeto Estudiante
             if lst[ver].nrc < lst[posMenor].nrc: 
                 posMenor = ver     
-        # EL INTERCAMBIO: Debe estar fuera del 'for ver' pero dentro del 'for mano'
         lst[mano], lst[posMenor] = lst[posMenor], lst[mano]
 
 lista=[]
